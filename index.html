@@ -2516,6 +2516,21 @@
         // 난이도 미니 점 표시
         const diffColor = q.difficulty === '상' ? 'bg-rose-500' : (q.difficulty === '중' ? 'bg-teal-500' : 'bg-emerald-500');
         omrBtn.className = baseClass;
+
+        const dot = document.createElement('span');
+        dot.className = `w-1.5 h-1.5 rounded-full absolute top-1 right-1 ${diffColor}`;
+        omrBtn.appendChild(dot);
+
+        omrBtn.onclick = () => loadQuestion(idx);
+        omrGrid.appendChild(omrBtn);
+      });
+
+      const countBadge = document.getElementById('answeredCountBadge');
+      if (countBadge) {
+        countBadge.textContent = `${answeredCount} / 25 완료`;
+      }
+    }
+
     // 텍스트 내 LaTeX 잔여물 및 화살표 특수기호 자동 정제 헬퍼
     function sanitizeText(str) {
       if (!str || typeof str !== 'string') return '';
