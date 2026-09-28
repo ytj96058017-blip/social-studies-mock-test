@@ -885,8 +885,36 @@
         },
         {
           id: "S_S05_02", difficulty: "상", unit: "시장 경제와 가격", subTopic: "균형 가격과 시장 불균형",
-          passage: `어떤 시장에서 균형 가격이 600원이고 균형 거래량이 15만 개이다. 현재 시장 가격이 400원에서 형성되어 있다면 나타나는 현상으로 옳은 것은?`,
-          text: "가격이 400원일 때 시장에서 일어나는 변화는?",
+          svg: `<svg viewBox="0 0 300 190" class="max-w-[280px] h-auto" xmlns="http://www.w3.org/2000/svg">
+            <rect width="300" height="190" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+            <line x1="50" y1="20" x2="50" y2="155" stroke="#475569" stroke-width="2"/>
+            <line x1="50" y1="155" x2="270" y2="155" stroke="#475569" stroke-width="2"/>
+            <text x="40" y="25" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="end">가격(원)</text>
+            <text x="265" y="172" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">수량(만개)</text>
+            <path d="M70 40 L 250 145" stroke="#0d9488" stroke-width="2.5" fill="none"/>
+            <text x="255" y="145" font-size="11" font-weight="bold" fill="#0f766e">D</text>
+            <path d="M70 145 L 250 40" stroke="#2563eb" stroke-width="2.5" fill="none"/>
+            <text x="255" y="40" font-size="11" font-weight="bold" fill="#1d4ed8">S</text>
+            <!-- 균형 600원, 15만개 -->
+            <circle cx="160" cy="92" r="4" fill="#dc2626"/>
+            <line x1="50" y1="92" x2="160" y2="92" stroke="#94a3b8" stroke-dasharray="2,2"/>
+            <line x1="160" y1="92" x2="160" y2="155" stroke="#94a3b8" stroke-dasharray="2,2"/>
+            <text x="45" y="95" font-size="9" fill="#475569" text-anchor="end">600</text>
+            <text x="160" y="168" font-size="9" fill="#475569" text-anchor="middle">15</text>
+            <!-- 400원 선과 초과수요 구간 -->
+            <line x1="50" y1="125" x2="215" y2="125" stroke="#94a3b8" stroke-dasharray="2,2"/>
+            <text x="45" y="128" font-size="9" fill="#475569" text-anchor="end">400</text>
+            <line x1="105" y1="125" x2="215" y2="125" stroke="#0d9488" stroke-width="2"/>
+            <circle cx="105" cy="125" r="3.5" fill="#2563eb"/>
+            <circle cx="215" cy="125" r="3.5" fill="#0d9488"/>
+            <line x1="105" y1="125" x2="105" y2="155" stroke="#94a3b8" stroke-dasharray="2,2"/>
+            <line x1="215" y1="125" x2="215" y2="155" stroke="#94a3b8" stroke-dasharray="2,2"/>
+            <text x="105" y="168" font-size="9" fill="#475569" text-anchor="middle">10</text>
+            <text x="215" y="168" font-size="9" fill="#475569" text-anchor="middle">20</text>
+            <text x="160" y="120" font-size="9" font-weight="bold" fill="#0f766e" text-anchor="middle">← 초과 수요 (10만 개 부족) →</text>
+          </svg>`,
+          passage: `[시장 가격의 불균형 분석]\n어떤 시장에서 균형 가격이 600원이고 균형 거래량이 15만 개이다. 현재 시장 가격이 400원에서 형성되어 공급량은 10만 개인데 수요량은 20만 개에 달하고 있다.`,
+          text: "위 그래프와 상황에서 가격이 400원일 때 시장에서 일어나는 변화로 옳은 것은?",
           choices: [
             "수요량이 공급량보다 많은 초과수요가 발생하며, 가격이 상승하기 시작한다.",
             "공급량이 수요량보다 많은 초과공급이 발생하여 가격이 하락한다.",
@@ -899,8 +927,25 @@
         },
         {
           id: "S_S05_03", difficulty: "상", unit: "시장 경제와 가격", subTopic: "균형 가격과 시장 불균형",
-          passage: `시장 가격의 자동 조절 과정을 도식화한 것이다.\n(가) 수요량 > 공급량 $\rightarrow$ 초과 ( ㉠ ) $\rightarrow$ 가격 ( ㉡ ) $\rightarrow$ 수요량 감소 및 공급량 증가\n(나) 수요량 < 공급량 $\rightarrow$ 초과 ( ㉢ ) $\rightarrow$ 가격 ( ㉣ ) $\rightarrow$ 수요량 증가 및 공급량 감소`,
-          text: "빈칸 ㉠~㉣에 들어갈 말을 바르게 연결한 것은?",
+          svg: `<svg viewBox="0 0 320 180" class="max-w-[300px] h-auto" xmlns="http://www.w3.org/2000/svg">
+            <rect width="320" height="180" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+            <!-- 흐름 다이어그램 -->
+            <rect x="15" y="20" width="135" height="140" rx="6" fill="#f0fdfa" stroke="#0d9488"/>
+            <text x="82" y="38" font-size="10" font-weight="bold" fill="#0f766e" text-anchor="middle">(가) 수요량 &gt; 공급량</text>
+            <text x="82" y="65" font-size="9" fill="#115e59" text-anchor="middle">↓ 초과 ( ㉠ )</text>
+            <text x="82" y="90" font-size="9" font-weight="bold" fill="#dc2626" text-anchor="middle">↓ 가격 ( ㉡ )</text>
+            <text x="82" y="115" font-size="8.5" fill="#334155" text-anchor="middle">수요량 감소, 공급량 증가</text>
+            <text x="82" y="145" font-size="9" font-weight="bold" fill="#0f766e" text-anchor="middle">⇒ [수요량 = 공급량] 균형</text>
+
+            <rect x="170" y="20" width="135" height="140" rx="6" fill="#eff6ff" stroke="#2563eb"/>
+            <text x="237" y="38" font-size="10" font-weight="bold" fill="#1d4ed8" text-anchor="middle">(나) 수요량 &lt; 공급량</text>
+            <text x="237" y="65" font-size="9" fill="#1e40af" text-anchor="middle">↓ 초과 ( ㉢ )</text>
+            <text x="237" y="90" font-size="9" font-weight="bold" fill="#2563eb" text-anchor="middle">↓ 가격 ( ㉣ )</text>
+            <text x="237" y="115" font-size="8.5" fill="#334155" text-anchor="middle">수요량 증가, 공급량 감소</text>
+            <text x="237" y="145" font-size="9" font-weight="bold" fill="#1d4ed8" text-anchor="middle">⇒ [수요량 = 공급량] 균형</text>
+          </svg>`,
+          passage: `[시장 가격의 자동 조절 과정 도식]\n(가) 수요량 > 공급량 → 초과 ( ㉠ ) → 가격 ( ㉡ ) → 수요량 감소 및 공급량 증가 → 균형 달성\n(나) 수요량 < 공급량 → 초과 ( ㉢ ) → 가격 ( ㉣ ) → 수요량 증가 및 공급량 감소 → 균형 달성`,
+          text: "위 도식의 빈칸 ㉠~㉣에 들어갈 경제 용어와 가격 변동 방향을 바르게 연결한 것은?",
           choices: [
             "㉠ 수요, ㉡ 상승, ㉢ 공급, ㉣ 하락",
             "㉠ 공급, ㉡ 하락, ㉢ 수요, ㉣ 상승",
@@ -909,12 +954,35 @@
             "㉠ 균형, ㉡ 불변, ㉢ 균형, ㉣ 불변"
           ],
           answer: 0,
-          explanation: "수요량이 많으면 초과수요로 가격이 상승하고, 공급량이 많으면 초과공급으로 가격이 하락합니다."
+          explanation: "수요량이 많으면 초과수요로 소비자 간 경쟁이 생겨 가격이 상승하고, 공급량이 많으면 초과공급으로 재고가 남아 판매자 간 가격 인하 경쟁으로 가격이 하락합니다."
         },
         {
           id: "S_S05_04", difficulty: "상", unit: "시장 경제와 가격", subTopic: "균형 가격과 시장 불균형",
-          passage: `크림빵의 시장 가격이 균형 가격인 700원보다 높은 900원일 때, 수요량은 3만 개이고 공급량은 15만 개이다.`,
-          text: "이때 시장에 나타나는 현상과 결과에 대한 설명으로 옳은 것은?",
+          svg: `<svg viewBox="0 0 300 190" class="max-w-[280px] h-auto" xmlns="http://www.w3.org/2000/svg">
+            <rect width="300" height="190" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+            <line x1="50" y1="20" x2="50" y2="155" stroke="#475569" stroke-width="2"/>
+            <line x1="50" y1="155" x2="270" y2="155" stroke="#475569" stroke-width="2"/>
+            <text x="40" y="25" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="end">가격(원)</text>
+            <text x="265" y="172" font-size="11" font-weight="bold" fill="#0f172a" text-anchor="middle">수량(만개)</text>
+            <path d="M70 40 L 250 145" stroke="#0d9488" stroke-width="2.5" fill="none"/>
+            <path d="M70 145 L 250 40" stroke="#2563eb" stroke-width="2.5" fill="none"/>
+            <circle cx="160" cy="92" r="4" fill="#dc2626"/>
+            <text x="45" y="95" font-size="9" fill="#475569" text-anchor="end">700</text>
+            <text x="160" y="168" font-size="9" fill="#475569" text-anchor="middle">9</text>
+            <!-- 900원 선과 초과공급 -->
+            <line x1="50" y1="50" x2="235" y2="50" stroke="#94a3b8" stroke-dasharray="2,2"/>
+            <text x="45" y="53" font-size="9" fill="#475569" text-anchor="end">900</text>
+            <line x1="85" y1="50" x2="235" y2="50" stroke="#2563eb" stroke-width="2"/>
+            <circle cx="85" cy="50" r="3.5" fill="#0d9488"/>
+            <circle cx="235" cy="50" r="3.5" fill="#2563eb"/>
+            <line x1="85" y1="50" x2="85" y2="155" stroke="#94a3b8" stroke-dasharray="2,2"/>
+            <line x1="235" y1="50" x2="235" y2="155" stroke="#94a3b8" stroke-dasharray="2,2"/>
+            <text x="85" y="168" font-size="9" fill="#475569" text-anchor="middle">3</text>
+            <text x="235" y="168" font-size="9" fill="#475569" text-anchor="middle">15</text>
+            <text x="160" y="42" font-size="9" font-weight="bold" fill="#2563eb" text-anchor="middle">← 초과 공급 (12만 개 재고) →</text>
+          </svg>`,
+          passage: `[크림빵 시장의 수급 불균형 자료]\n크림빵의 시장 가격이 균형 가격인 700원보다 높은 900원일 때, 수요량은 3만 개이고 공급량은 15만 개이다.`,
+          text: "위 그래프를 바탕으로 이때 시장에 나타나는 현상과 결과에 대한 설명으로 옳은 것은?",
           choices: [
             "12만 개의 초과 공급이 발생하여 재고가 쌓이고, 공급자 간 경쟁으로 가격이 하락한다.",
             "12만 개의 초과 수요가 발생하여 빵이 부족해지고 가격이 폭등한다.",
@@ -923,7 +991,7 @@
             "정부가 강제로 크림빵 생산 공장을 폐쇄한다."
           ],
           answer: 0,
-          explanation: "공급량(15만)이 수요량(3만)보다 12만 개 더 많은 초과 공급 상태이므로, 재고를 털기 위한 판매자 간 경쟁으로 가격이 내립니다."
+          explanation: "공급량(15만)이 수요량(3만)보다 12만 개 더 많은 초과 공급 상태이므로, 재고를 털기 위한 판매자 간 가격 인하 경쟁으로 가격이 하락하여 균형 가격(700원)으로 수렴합니다."
         }
       ],
 
@@ -931,8 +999,23 @@
       [
         {
           id: "S_S06_01", difficulty: "중", unit: "시장 가격의 변동·응용", subTopic: "수요 곡선의 이동",
+          svg: `<svg viewBox="0 0 280 170" class="max-w-[260px] h-auto" xmlns="http://www.w3.org/2000/svg">
+            <rect width="280" height="170" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+            <line x1="45" y1="20" x2="45" y2="140" stroke="#475569" stroke-width="2"/>
+            <line x1="45" y1="140" x2="250" y2="140" stroke="#475569" stroke-width="2"/>
+            <text x="35" y="25" font-size="10" font-weight="bold" fill="#0f172a" text-anchor="end">가격(P)</text>
+            <text x="245" y="155" font-size="10" font-weight="bold" fill="#0f172a" text-anchor="middle">수량(Q)</text>
+            <!-- D1 -> D2 우측 이동 -->
+            <path d="M60 40 L 190 130" stroke="#94a3b8" stroke-width="2" stroke-dasharray="2,2" fill="none"/>
+            <path d="M100 40 L 230 130" stroke="#0d9488" stroke-width="2.5" fill="none"/>
+            <path d="M125 75 L 165 75" stroke="#0d9488" stroke-width="2"/>
+            <polygon points="165,72 173,75 165,78" fill="#0d9488"/>
+            <text x="195" y="130" font-size="10" fill="#94a3b8">D1</text>
+            <text x="235" y="130" font-size="10" font-weight="bold" fill="#0d9488">D2</text>
+            <text x="145" y="65" font-size="9" font-weight="bold" fill="#0d9488" text-anchor="middle">수요 증가(우측 이동)</text>
+          </svg>`,
           passage: `[수요량의 변동 vs 수요의 변동]\n- 수요량의 변동: 해당 상품의 '가격'이 변하여 곡선 상의 점이 이동함\n- 수요의 변동: 해당 상품 가격 이외의 요인(소득, 선호도, 인구수, 연관재 가격 등)이 변하여 수요 곡선 자체가 오른쪽(증가) 또는 왼쪽(감소)으로 이동함`,
-          text: "공기청정기 시장에서 수요 곡선 자체를 '오른쪽(수요 증가)'으로 이동시키는 요인으로 옳은 것은?",
+          text: "위 그래프와 같이 공기청정기 시장에서 수요 곡선 자체를 '오른쪽(수요 증가)'으로 이동시키는 요인으로 옳은 것은?",
           choices: [
             "미세먼지가 매우 심각한 수준으로 자주 발생하여 맑은 공기에 대한 선호가 커짐",
             "공기청정기 필터의 생산 원자재 가격이 상승함",
@@ -945,7 +1028,20 @@
         },
         {
           id: "S_S06_02", difficulty: "중", unit: "시장 가격의 변동·응용", subTopic: "수요 곡선의 이동",
-          passage: `어떤 상품의 수요 곡선이 왼쪽으로 이동(수요 감소)하는 원인에 해당하는 것만을 <보기>에서 고른 것은?\n<보기>\nㄱ. 소비자의 소득 감소\nㄴ. 해당 상품에 대한 선호도 감소\nㄷ. 시장의 잠재적 소비자 수(인구) 감소\nㄹ. 생산 기술의 획기적 발전`,
+          svg: `<svg viewBox="0 0 280 170" class="max-w-[260px] h-auto" xmlns="http://www.w3.org/2000/svg">
+            <rect width="280" height="170" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+            <line x1="45" y1="20" x2="45" y2="140" stroke="#475569" stroke-width="2"/>
+            <line x1="45" y1="140" x2="250" y2="140" stroke="#475569" stroke-width="2"/>
+            <!-- D1 -> D2 좌측 이동 -->
+            <path d="M100 40 L 230 130" stroke="#94a3b8" stroke-width="2" stroke-dasharray="2,2" fill="none"/>
+            <path d="M60 40 L 190 130" stroke="#dc2626" stroke-width="2.5" fill="none"/>
+            <path d="M165 75 L 125 75" stroke="#dc2626" stroke-width="2"/>
+            <polygon points="125,72 117,75 125,78" fill="#dc2626"/>
+            <text x="235" y="130" font-size="10" fill="#94a3b8">D1</text>
+            <text x="195" y="130" font-size="10" font-weight="bold" fill="#dc2626">D2</text>
+            <text x="145" y="65" font-size="9" font-weight="bold" fill="#dc2626" text-anchor="middle">수요 감소(좌측 이동)</text>
+          </svg>`,
+          passage: `어떤 상품의 수요 곡선이 위 그래프처럼 왼쪽으로 이동(수요 감소)하는 원인에 해당하는 것만을 <보기>에서 고른 것은?\n<보기>\nㄱ. 소비자의 소득 감소\nㄴ. 해당 상품에 대한 선호도 감소\nㄷ. 시장의 잠재적 소비자 수(인구) 감소\nㄹ. 생산 기술의 획기적 발전`,
           text: "수요 감소 요인으로 바르게 묶인 것은?",
           choices: ["ㄱ, ㄴ, ㄷ", "ㄱ, ㄹ", "ㄴ, ㄷ, ㄹ", "ㄷ, ㄹ", "ㄱ, ㄴ, ㄷ, ㄹ"],
           answer: 0,
@@ -953,7 +1049,7 @@
         },
         {
           id: "S_S06_03", difficulty: "중", unit: "시장 가격의 변동·응용", subTopic: "수요 곡선의 이동",
-          passage: `신문 기사: "다음 달부터 모든 라면 제품의 가격이 30% 일제히 인상될 것으로 예상된다는 보도가 나오자, 대형 마트마다 라면을 미리 사두려는 소비자들로 장사진을 이루었다."`,
+          passage: `[신문 기사]\n"다음 달부터 모든 라면 제품의 가격이 30% 일제히 인상될 것으로 예상된다는 보도가 나오자, 대형 마트마다 라면을 미리 사두려는 소비자들로 장사진을 이루었다."`,
           text: "위 기사에서 라면의 수요가 증가한 원인은 무엇인가?",
           choices: [
             "미래 상품 가격 상승에 대한 예상",
@@ -967,8 +1063,23 @@
         },
         {
           id: "S_S06_04", difficulty: "중", unit: "시장 가격의 변동·응용", subTopic: "수요 곡선의 이동",
-          passage: `소득 증가나 유행 등으로 수요가 증가하여 수요 곡선이 오른쪽으로 이동할 때, 시장의 균형 가격과 균형 거래량의 변화로 옳은 것은?`,
-          text: "수요 증가 시 균형의 변동 결과는?",
+          svg: `<svg viewBox="0 0 280 180" class="max-w-[260px] h-auto" xmlns="http://www.w3.org/2000/svg">
+            <rect width="280" height="180" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+            <line x1="45" y1="20" x2="45" y2="150" stroke="#475569" stroke-width="2"/>
+            <line x1="45" y1="150" x2="255" y2="150" stroke="#475569" stroke-width="2"/>
+            <path d="M60 40 L 190 130" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="2,2" fill="none"/>
+            <path d="M95 40 L 225 130" stroke="#0d9488" stroke-width="2.5" fill="none"/>
+            <path d="M60 130 L 220 40" stroke="#2563eb" stroke-width="2" fill="none"/>
+            <!-- 원래 균형 E1 -> 새 균형 E2 -->
+            <circle cx="125" cy="94" r="3.5" fill="#64748b"/>
+            <circle cx="150" cy="80" r="4" fill="#dc2626"/>
+            <text x="115" y="90" font-size="8.5" fill="#64748b">E1</text>
+            <text x="160" y="75" font-size="9" font-weight="bold" fill="#dc2626">E2</text>
+            <text x="135" y="165" font-size="8.5" fill="#0d9488">거래량 증가 →</text>
+            <text x="35" y="80" font-size="8.5" fill="#0d9488" text-anchor="end">↑ 가격</text>
+          </svg>`,
+          passage: `소득 증가나 유행 등으로 수요가 증가하여 수요 곡선이 오른쪽으로 이동할 때, 시장의 균형 가격과 균형 거래량의 변화를 나타낸 그래프이다.`,
+          text: "위 그래프와 같이 수요 증가 시 균형의 변동 결과로 옳은 것은?",
           choices: [
             "균형 가격 상승, 균형 거래량 증가",
             "균형 가격 하락, 균형 거래량 감소",
@@ -977,7 +1088,7 @@
             "균형 가격 불변, 균형 거래량 증가"
           ],
           answer: 0,
-          explanation: "수요 곡선이 우측으로 이동하면 교점이 오른쪽 위로 이동하므로 균형 가격은 오르고 균형 거래량은 늘어납니다."
+          explanation: "수요 곡선이 우측으로 이동하면 공급 곡선과의 교점이 오른쪽 위로 이동하므로 균형 가격은 상승하고 균형 거래량은 증가합니다."
         }
       ],
 
@@ -985,8 +1096,23 @@
       [
         {
           id: "S_S07_01", difficulty: "중", unit: "시장 가격의 변동·응용", subTopic: "공급 곡선의 이동",
+          svg: `<svg viewBox="0 0 280 170" class="max-w-[260px] h-auto" xmlns="http://www.w3.org/2000/svg">
+            <rect width="280" height="170" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+            <line x1="45" y1="20" x2="45" y2="140" stroke="#475569" stroke-width="2"/>
+            <line x1="45" y1="140" x2="250" y2="140" stroke="#475569" stroke-width="2"/>
+            <text x="35" y="25" font-size="10" font-weight="bold" fill="#0f172a" text-anchor="end">가격(P)</text>
+            <text x="245" y="155" font-size="10" font-weight="bold" fill="#0f172a" text-anchor="middle">수량(Q)</text>
+            <!-- S1 -> S2 우측 이동 -->
+            <path d="M60 120 L 190 30" stroke="#94a3b8" stroke-width="2" stroke-dasharray="2,2" fill="none"/>
+            <path d="M100 120 L 230 30" stroke="#2563eb" stroke-width="2.5" fill="none"/>
+            <path d="M125 75 L 165 75" stroke="#2563eb" stroke-width="2"/>
+            <polygon points="165,72 173,75 165,78" fill="#2563eb"/>
+            <text x="195" y="30" font-size="10" fill="#94a3b8">S1</text>
+            <text x="235" y="30" font-size="10" font-weight="bold" fill="#2563eb">S2</text>
+            <text x="145" y="65" font-size="9" font-weight="bold" fill="#2563eb" text-anchor="middle">공급 증가(우측 이동)</text>
+          </svg>`,
           passage: `[공급 변동의 원인 분석]\n공급의 변동이란 해당 상품의 가격 이외의 요인이 변하여 공급 곡선 자체가 오른쪽(공급 증가) 또는 왼쪽(공급 감소)으로 이동하는 현상이다.`,
-          text: "배추 시장에서 배추의 공급 곡선을 오른쪽(공급 증가)으로 이동시키는 요인으로 옳은 것은?",
+          text: "위 그래프와 같이 배추 시장에서 배추의 공급 곡선을 오른쪽(공급 증가)으로 이동시키는 요인으로 옳은 것은?",
           choices: [
             "배추를 재배하는 우수한 농업 기술이 개발되고 보급됨",
             "폭염과 가뭄으로 인해 배추 재배 면적이 크게 감소함",
@@ -999,8 +1125,21 @@
         },
         {
           id: "S_S07_02", difficulty: "중", unit: "시장 가격의 변동·응용", subTopic: "공급 곡선의 이동",
+          svg: `<svg viewBox="0 0 280 170" class="max-w-[260px] h-auto" xmlns="http://www.w3.org/2000/svg">
+            <rect width="280" height="170" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+            <line x1="45" y1="20" x2="45" y2="140" stroke="#475569" stroke-width="2"/>
+            <line x1="45" y1="140" x2="250" y2="140" stroke="#475569" stroke-width="2"/>
+            <!-- S1 -> S2 좌측 이동 -->
+            <path d="M100 120 L 230 30" stroke="#94a3b8" stroke-width="2" stroke-dasharray="2,2" fill="none"/>
+            <path d="M60 120 L 190 30" stroke="#ea580c" stroke-width="2.5" fill="none"/>
+            <path d="M165 75 L 125 75" stroke="#ea580c" stroke-width="2"/>
+            <polygon points="125,72 117,75 125,78" fill="#ea580c"/>
+            <text x="235" y="30" font-size="10" fill="#94a3b8">S1</text>
+            <text x="195" y="30" font-size="10" font-weight="bold" fill="#ea580c">S2</text>
+            <text x="145" y="65" font-size="9" font-weight="bold" fill="#ea580c" text-anchor="middle">공급 감소(좌측 이동)</text>
+          </svg>`,
           passage: `중동 지역의 군사적 분쟁이 확산되어 유전 시설이 파괴되고 원유 수송로가 차단되었다.`,
-          text: "이로 인해 국제 석유 시장에 나타나는 변화로 가장 적절한 것은?",
+          text: "이로 인해 국제 석유 시장에 나타나는 그래프의 변화(위 그림 참고)와 결과로 가장 적절한 것은?",
           choices: [
             "원유 공급이 감소하여 공급 곡선이 왼쪽으로 이동하고, 유가가 상승한다.",
             "원유 공급이 증가하여 공급 곡선이 오른쪽으로 이동하고, 유가가 하락한다.",
@@ -1045,8 +1184,26 @@
       [
         {
           id: "S_S08_01", difficulty: "중", unit: "시장 가격의 변동·응용", subTopic: "대체재와 보완재",
-          passage: `[연관재의 개념]\n- 대체재: 쓰임이 비슷하여 서로 대신 바꾸어 쓸 수 있는 재화 (예: 소고기와 돼지고기, 사이다와 콜라, 쌀과 밀)\n- 보완재: 함께 소비해야 만족감이 더 커지는 재화 (예: 햄버거와 콜라, 커피와 설탕, 삼겹살과 상추, 자동차와 휘발유)`,
-          text: "소고기 가격이 크게 하락하였을 때, 대체재 관계에 있는 돼지고기 시장에 나타나는 변화로 옳은 것은?",
+          svg: `<svg viewBox="0 0 310 160" class="max-w-[290px] h-auto" xmlns="http://www.w3.org/2000/svg">
+            <rect width="310" height="160" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+            <!-- 소고기 시장 -->
+            <rect x="15" y="15" width="130" height="130" rx="6" fill="#f8fafc" stroke="#94a3b8"/>
+            <text x="80" y="32" font-size="9.5" font-weight="bold" fill="#0f172a" text-anchor="middle">[소고기 시장: 대체재]</text>
+            <text x="80" y="60" font-size="9" fill="#0f766e" text-anchor="middle">소고기 가격 하락 (↓)</text>
+            <text x="80" y="80" font-size="9" fill="#0f766e" text-anchor="middle">⇒ 소고기 수요량 증가</text>
+            <text x="80" y="115" font-size="8.5" fill="#475569" text-anchor="middle">소고기를 더 많이 소비함</text>
+            <!-- 화살표 -->
+            <path d="M150 80 L 165 80" stroke="#0f172a" stroke-width="2"/>
+            <polygon points="165,77 172,80 165,83" fill="#0f172a"/>
+            <!-- 돼지고기 시장 -->
+            <rect x="175" y="15" width="120" height="130" rx="6" fill="#fef2f2" stroke="#ef4444"/>
+            <text x="235" y="32" font-size="9.5" font-weight="bold" fill="#b91c1c" text-anchor="middle">[돼지고기 시장]</text>
+            <text x="235" y="60" font-size="9" font-weight="bold" fill="#b91c1c" text-anchor="middle">돼지고기 수요 감소 (←)</text>
+            <text x="235" y="85" font-size="8.5" fill="#991b1b" text-anchor="middle">수요 곡선 좌측 이동</text>
+            <text x="235" y="115" font-size="8.5" font-weight="bold" fill="#dc2626" text-anchor="middle">가격 하락, 거래량 감소</text>
+          </svg>`,
+          passage: `[연관재의 개념과 메커니즘]\n- 대체재: 쓰임이 비슷하여 서로 대신 바꾸어 쓸 수 있는 재화 (예: 소고기와 돼지고기, 사이다와 콜라, 쌀과 밀)\n- 보완재: 함께 소비해야 만족감이 더 커지는 재화 (예: 햄버거와 콜라, 커피와 설탕, 삼겹살과 상추)`,
+          text: "위 도식과 같이 소고기 가격이 크게 하락하였을 때, 대체재 관계에 있는 돼지고기 시장에 나타나는 변화로 옳은 것은?",
           choices: [
             "돼지고기 수요가 감소하여 돼지고기 가격이 하락하고 거래량도 줄어든다.",
             "돼지고기 수요가 증가하여 돼지고기 가격이 상승하고 거래량이 늘어난다.",
@@ -1055,7 +1212,7 @@
             "소고기와 돼지고기는 독립재이므로 아무런 변화가 없다."
           ],
           answer: 0,
-          explanation: "대체재인 소고기 가격이 내리면 사람들이 소고기를 더 사 먹고 돼지고기는 덜 찾게 되므로, 돼지고기 수요가 감소하여 가격 하락·거래량 감소가 나타납니다."
+          explanation: "대체재인 소고기 가격이 내리면 사람들이 소고기를 더 사 먹고 돼지고기는 덜 찾게 되므로, 돼지고기 수요가 감소(좌측 이동)하여 가격 하락·거래량 감소가 나타납니다."
         },
         {
           id: "S_S08_02", difficulty: "중", unit: "시장 가격의 변동·응용", subTopic: "대체재와 보완재",
@@ -1114,7 +1271,8 @@
             <path d="M110 40 L 260 140" stroke="#0f766e" stroke-width="2.5" fill="none"/>
             <path d="M70 140 L 250 40" stroke="#2563eb" stroke-width="2" fill="none"/>
             <!-- 화살표 -->
-            <path d="M140 85 L 180 85" stroke="#0f766e" stroke-width="2" marker-end="url(#arrow)"/>
+            <path d="M140 85 L 180 85" stroke="#0f766e" stroke-width="2"/>
+            <polygon points="180,82 188,85 180,88" fill="#0f766e"/>
             <text x="160" y="75" font-size="9" font-weight="bold" fill="#0f766e" text-anchor="middle">수요 곡선 우측 이동</text>
             <text x="268" y="140" font-size="11" font-weight="bold" fill="#0f766e">D2</text>
             <text x="258" y="38" font-size="11" font-weight="bold" fill="#1d4ed8">S</text>
@@ -1129,8 +1287,23 @@
         },
         {
           id: "S_S09_02", difficulty: "상", unit: "시장 가격의 변동·응용", subTopic: "시장 변동의 종합 분석",
+          svg: `<svg viewBox="0 0 320 160" class="max-w-[300px] h-auto" xmlns="http://www.w3.org/2000/svg">
+            <rect width="320" height="160" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+            <!-- (가) 소고기: 공급감소 -->
+            <rect x="15" y="15" width="135" height="130" rx="6" fill="#fff7ed" stroke="#f97316"/>
+            <text x="82" y="32" font-size="9.5" font-weight="bold" fill="#c2410c" text-anchor="middle">(가) 소고기 시장</text>
+            <text x="82" y="55" font-size="8.5" fill="#475569" text-anchor="middle">가뭄 + 사료·연료비 급등</text>
+            <text x="82" y="75" font-size="9" font-weight="bold" fill="#ea580c" text-anchor="middle">⇒ 공급 감소 (S 좌측 이동)</text>
+            <text x="82" y="105" font-size="9" font-weight="bold" fill="#0f172a" text-anchor="middle">균형 가격 ↑ / 거래량 ↓</text>
+            <!-- (나) 희토류: 수요증가 -->
+            <rect x="170" y="15" width="135" height="130" rx="6" fill="#f0fdfa" stroke="#0d9488"/>
+            <text x="237" y="32" font-size="9.5" font-weight="bold" fill="#0f766e" text-anchor="middle">(나) 희토류 시장</text>
+            <text x="237" y="55" font-size="8.5" fill="#475569" text-anchor="middle">스마트 기기 구입 열풍</text>
+            <text x="237" y="75" font-size="9" font-weight="bold" fill="#0d9488" text-anchor="middle">⇒ 수요 증가 (D 우측 이동)</text>
+            <text x="237" y="105" font-size="9" font-weight="bold" fill="#0f172a" text-anchor="middle">균형 가격 ↑ / 거래량 ↑</text>
+          </svg>`,
           passage: `[시장 변동 사례 비교]\n(가) 소고기 시장: 몇 년간 이어진 가뭄과 사료·연료비 등 생산 비용이 급등하여 농가들이 소 사육을 크게 줄임\n(나) 스마트폰용 희토류 시장: 전 세계적으로 스마트 기기 구입 열풍이 불어 희토류 주문이 쇄도함`,
-          text: "(가)와 (나) 시장에 나타나는 균형 가격과 균형 거래량의 변화를 바르게 짝지은 것은?",
+          text: "위 도식을 바탕으로 (가)와 (나) 시장에 나타나는 균형 가격과 균형 거래량의 변화를 바르게 짝지은 것은?",
           choices: [
             "(가): 균형 가격 상승, 거래량 감소 / (나): 균형 가격 상승, 거래량 증가",
             "(가): 균형 가격 하락, 거래량 증가 / (나): 균형 가격 상승, 거래량 증가",
@@ -1730,8 +1903,31 @@
       [
         {
           id: "S_S20_01", difficulty: "중", unit: "국민 경제와 경제 성장", subTopic: "1인당 GDP와 생활 수준",
+          svg: `<svg viewBox="0 0 320 180" class="max-w-[300px] h-auto" xmlns="http://www.w3.org/2000/svg">
+            <rect width="320" height="180" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+            <!-- 한국 vs 중국 GDP 비교 막대 -->
+            <text x="160" y="22" font-size="10" font-weight="bold" fill="#0f172a" text-anchor="middle">2023년 한국과 중국의 GDP 비교</text>
+            <!-- 총 GDP -->
+            <text x="75" y="45" font-size="9" font-weight="bold" fill="#475569" text-anchor="middle">국내총생산 (규모)</text>
+            <rect x="35" y="115" width="35" height="15" fill="#0d9488"/>
+            <text x="52" y="110" font-size="8" fill="#0f766e" text-anchor="middle">1,722억$</text>
+            <text x="52" y="142" font-size="8.5" fill="#334155" text-anchor="middle">한국</text>
+            <rect x="80" y="55" width="35" height="75" fill="#2563eb"/>
+            <text x="97" y="50" font-size="8" fill="#1d4ed8" text-anchor="middle">19,374억$</text>
+            <text x="97" y="142" font-size="8.5" fill="#334155" text-anchor="middle">중국</text>
+            <!-- 1인당 GDP -->
+            <text x="235" y="45" font-size="9" font-weight="bold" fill="#475569" text-anchor="middle">1인당 GDP (생활수준)</text>
+            <rect x="195" y="60" width="35" height="70" fill="#0d9488"/>
+            <text x="212" y="55" font-size="8" fill="#0f766e" text-anchor="middle">33,147$</text>
+            <text x="212" y="142" font-size="8.5" fill="#334155" text-anchor="middle">한국</text>
+            <rect x="240" y="105" width="35" height="25" fill="#2563eb"/>
+            <text x="257" y="100" font-size="8" fill="#1d4ed8" text-anchor="middle">12,547$</text>
+            <text x="257" y="142" font-size="8.5" fill="#334155" text-anchor="middle">중국</text>
+            <line x1="25" y1="130" x2="295" y2="130" stroke="#64748b" stroke-width="1.5"/>
+            <text x="160" y="168" font-size="8" fill="#64748b" text-anchor="middle">*출처: IMF (1인당 GDP = 총GDP ÷ 총인구)</text>
+          </svg>`,
           passage: `[2023년 한국과 중국의 GDP 비교 자료]\n- 한국: 국내 총생산 1,722억 달러 / 1인당 국내 총생산 33,147달러\n- 중국: 국내 총생산 19,374억 달러 / 1인당 국내 총생산 12,547달러\n(출처: IMF)`,
-          text: "위 자료를 바탕으로 두 나라의 경제 상황을 옳게 비교 분석한 것은?",
+          text: "위 그래프와 자료를 바탕으로 두 나라의 경제 상황을 옳게 비교 분석한 것은?",
           choices: [
             "전체 경제 규모는 중국이 한국보다 훨씬 크지만, 국민 1인당 평균 소득과 생활 수준은 한국이 더 높다.",
             "한국의 경제 규모가 중국보다 크다.",
@@ -1752,8 +1948,23 @@
         },
         {
           id: "S_S20_03", difficulty: "중", unit: "국민 경제와 경제 성장", subTopic: "1인당 GDP와 생활 수준",
+          svg: `<svg viewBox="0 0 300 150" class="max-w-[280px] h-auto" xmlns="http://www.w3.org/2000/svg">
+            <rect width="300" height="150" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+            <!-- A국 vs B국 비교 카드 -->
+            <rect x="25" y="20" width="115" height="110" rx="6" fill="#f0fdfa" stroke="#0d9488"/>
+            <text x="82" y="42" font-size="11" font-weight="bold" fill="#0f766e" text-anchor="middle">[A국]</text>
+            <text x="82" y="65" font-size="9" fill="#334155" text-anchor="middle">GDP: 1,000억 달러</text>
+            <text x="82" y="85" font-size="9" fill="#334155" text-anchor="middle">인구: 1,000만 명</text>
+            <text x="82" y="112" font-size="9.5" font-weight="bold" fill="#0d9488" text-anchor="middle">1인당: 10,000달러</text>
+
+            <rect x="160" y="20" width="115" height="110" rx="6" fill="#eff6ff" stroke="#2563eb"/>
+            <text x="217" y="42" font-size="11" font-weight="bold" fill="#1d4ed8" text-anchor="middle">[B국]</text>
+            <text x="217" y="65" font-size="9" fill="#334155" text-anchor="middle">GDP: 2,000억 달러</text>
+            <text x="217" y="85" font-size="9" fill="#334155" text-anchor="middle">인구: 4,000만 명</text>
+            <text x="217" y="112" font-size="9.5" font-weight="bold" fill="#2563eb" text-anchor="middle">1인당: 5,000달러</text>
+          </svg>`,
           passage: `A국은 GDP가 1,000억 달러이고 인구가 1,000만 명이다. B국은 GDP가 2,000억 달러이고 인구가 4,000만 명이다.`,
-          text: "두 나라의 경제에 대한 분석으로 옳은 것은?",
+          text: "위 자료를 바탕으로 두 나라의 경제에 대해 올바르게 분석한 것은?",
           choices: [
             "A국의 1인당 GDP(1만 달러)가 B국의 1인당 GDP(5천 달러)보다 높다.",
             "B국의 국민 평균 생활 수준이 A국의 2배이다.",
@@ -1762,7 +1973,7 @@
             "B국은 A국보다 인구수가 적다."
           ],
           answer: 0,
-          explanation: "A국 1인당 GDP는 1,000억/1,000만 = 1만 달러, B국은 2,000억/4,000만 = 5,000달러이므로 A국이 더 높습니다."
+          explanation: "A국 1인당 GDP는 1,000억/1,000만 = 1만 달러, B국은 2,000억/4,000만 = 5,000달러이므로 1인당 소득과 생활 수준은 A국이 더 높습니다."
         },
         {
           id: "S_S20_04", difficulty: "중", unit: "국민 경제와 경제 성장", subTopic: "1인당 GDP와 생활 수준",
